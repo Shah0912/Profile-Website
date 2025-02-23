@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+select {
+    outline: none;
+}
+
+.modal {
+    margin: unset !important;
+    padding: unset !important;
+}
+
+.modal>*>* {
+    margin: unset !important;
+    padding: unset !important;
+}
+
+.title_font {
+    font-size: 25px;
+    font-weight: 700;
+    --n: 45;
+}
+
+.content_font {
+    font-size: 15px;
+}
+
+.btn-dark:hover {
+    background-color: transparent;
+    color: black;
+    transition: 0.4s;
+    font-size: 21px;
+}
+
+.container {
+    max-width: unset !important;
+}
+
+.header_background {
+    min-height: 800px;
+    background: white;
+}
+
+h1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.icons a {
+    margin: 10px !important;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.icon {
+    margin: 7px !important;
+    color: black;
+    width: 25px;
+    height: 25px;
+}
+
+.icon:hover {
+    background-color: white;
+    color: white;
+    transition: 0.4s;
+}
+
+.icons a:hover .icon {
+    background-color: transparent;
+    color: white;
+    transition: 0.4s;
+}
+
+.icons a:hover {
+    background-color: transparent;
+    transition: 0.4s;
+    background-color: black;
+}
+
+.header_name_content h2 {
+    font-size: 20px;
+}
+
+.type {
+    color: #0000;
+    background:
+        linear-gradient(black 0 0) 0 50%/150% 95%,
+        linear-gradient(black 0 0) 0 0 /100% 100%;
+    -webkit-background-clip: padding-box, text;
+    background-clip: padding-box, text;
+    background-repeat: no-repeat;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    animation:
+        t 1s forwards,
+        b 1s .8s forwards;
+}
+
+@media screen and (min-width: 576px) {
+    .header_name_content h2 {
+        font-size: 30px;
+    }
+
+    .title_font {
+        font-size: 30px;
+    }
+
+    .content_font {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header_name_content h2 {
+        font-size: 40px;
+    }
+
+    .title_font {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .content_font {
+        font-size: 17.5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .icons {
+        justify-content: flex-end;
+    }
+
+    .icons a {
+        margin-left: 10px !important;
+    }
+
+    .title_font {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .content_font {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+@keyframes t {
+    from {
+        background-size: 0 95%, 0 100%
+    }
+}
+
+@keyframes b {
+    100% {
+        background-position: -200% 50%, 0 0
+    }
+}
+
+.project_image {
+    height: 250px;
+    border-radius: 20px;
+    background-color: #E7F5FE;
+}
+
+#portfolio img {
+    /* Shadow */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    /* Border */
+    border-radius: 42px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.project_description {
+    line-height: 3.5ex;
+    max-height: 10.5ex;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+.read_more {
+    text-decoration: none;
+    background: linear-gradient(#0086ce, #0086ce) bottom / 0 .1em no-repeat;
+    transition: 0.5s;
+    background-position: left bottom;
+    color: black;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+}
+
+.read_more:hover {
+    background-size: 100% .1em;
+    color: #005e91;
+    font-weight: 400;
+}
+
+.form_container {
+    border-radius: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgb(179, 179, 179);
+    outline: none;
+    padding: 0px 12px;
+}
+
+textarea {
+    min-height: 200px;
+    border-radius: 20px;
+    border: 1px solid rgb(179, 179, 179);
+    outline: none;
+    padding: 10px 12px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 5px solid rgb(179, 179, 179, 0.7);
+    transition: 0.4s;
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow: scroll;
+}
+
+/* Remove padding to px-5 class in small screens */
+@media screen and (max-width: 575px) {
+    .px-5 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+#portfolio h3,
+#contact h3,
+#recommendations h3,
+#admits h3 {
+    font-size: 33px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.modal a {
+    border-bottom: 0.5px solid black;
+}
+
+.glider-dot.active {
+    background-color: black;
+}
+
+.glider::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+}
+
+.stop-scrolling {
+    overflow: hidden;
+}
+
+#admits img {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#admits img:hover {
+    opacity: 1;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.border-radius-30 {
+    border-radius: 30px;
+}
+
+#form_loader {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.467);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50000;
+    top: 0;
+    visibility: hidden;
+}
+
+noscript iframe {
+    display: none;
+    visibility: hidden;
+}
+
+.filter_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.filter_active {
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+#filter_select {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../images/dropdown.png);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 15px, 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #filter_select_parent {
+        visibility: hidden;
+        height: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #filter_button_parent {
+        visibility: hidden;
+        height: 0px;
+    }
+}
